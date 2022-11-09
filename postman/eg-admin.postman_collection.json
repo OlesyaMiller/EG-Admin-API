@@ -1,0 +1,1209 @@
+{
+	"info": {
+		"_postman_id": "19bdb606-b870-4207-b292-51e20f0cf2fc",
+		"name": "eg-admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Live Events",
+			"item": [
+				{
+					"name": "Get all live events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/live-event",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"live-event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get live event by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/live-event/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"live-event",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create live event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"fool moon12\",\n    \"url\": \"fullmoon12\",\n    \"code\": \"full moon12\",\n    \"notes\": \"full moon12\",\n    \"dateEnds\": 4,\n    \"dateStarts\": \"2022-06-19T20:53:42.217Z\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/live-event",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"live-event"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "Get all images",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/image",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get image by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/image/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"image",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/olesya/Pictures/Screenshot from 2022-07-21 14-44-05.png"
+								},
+								{
+									"key": "filename",
+									"value": "this is profile pic",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "filenameOriginal",
+									"value": "this is filename original",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "33",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "width",
+									"value": "111111",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "444444",
+									"type": "text"
+								},
+								{
+									"key": "mimeType",
+									"value": "this is mimeType",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "encoding",
+									"value": "111222222222222222",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/image/upload",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"image",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update image",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/image/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"image",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete image",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/image/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"image",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Explore Designers",
+			"item": [
+				{
+					"name": "Gell all designers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-designer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-designer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get designer by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-designer/ooohooo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-designer",
+								"ooohooo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Explore Designer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sellerId\": \"seller9876\",\n    \"imageId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/explore-designer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-designer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update designer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-designer/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-designer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete designer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-designer/ooohooo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-designer",
+								"ooohooo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Explore Products",
+			"item": [
+				{
+					"name": "Gell all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-product",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-product/45",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-product",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"ExploreProduct123\",\n    \"name\": \"Explore Product 123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/explore-product",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-product/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-product/45",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-product",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Explore Categories",
+			"item": [
+				{
+					"name": "Gell all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get category by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-category/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\": \"maxi dresses 2\",\n    \"imageId\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/explore-category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update category",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-category/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/explore-category/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"explore-category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nav Top Designers",
+			"item": [
+				{
+					"name": "Gell all nav top designers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-top-designer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-top-designer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get nav top designer by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-top-designer/sellerid",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-top-designer",
+								"sellerid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create nav top designer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sellerId\": \"seller id 22222\",\n\"imageId\": \"222222\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/nav-top-designer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-top-designer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update nav top designer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-top-designer/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-top-designer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete nav top designer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-top-designer/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-top-designer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nav Recommended Designers",
+			"item": [
+				{
+					"name": "Get all nav recommended designers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-recommended-designer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-recommended-designer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get nav recommended designer by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-recommended-designer/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-recommended-designer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create nav recommended designer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sellerId\": \"ABC123\",\n    \"name\": \"Seller ABC123\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/nav-recommended-designer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-recommended-designer"
+							],
+							"query": [
+								{
+									"key": "sellerId",
+									"value": "'dfsfdsf'",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "'this is name'",
+									"disabled": true
+								},
+								{
+									"key": "dateCreated",
+									"value": "07/07/2022",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update nav recommended designer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-recommended-designer/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-recommended-designer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete nav recommended designer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nav-recommended-designer/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nav-recommended-designer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sellers",
+			"item": [
+				{
+					"name": "Gell all sellers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get seller by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller/test_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller",
+								"test_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sellerId\": 9,\n    \"videoFooter\": \"test_footer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/seller",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update seller",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete seller",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seller Products",
+			"item": [
+				{
+					"name": "Get all seller products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller-product",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get seller product by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller-product/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller-product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create seller product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sellerId\": 7,\n    \"productId\": 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/seller-product",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update seller product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller-product/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller-product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete seller product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/seller-product/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"seller-product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Export",
+			"item": [
+				{
+					"name": "Get all current events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/export/live-events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"live-events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all explore data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/export/explore",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"explore"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get nav data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/export/nav",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"nav"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export Seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/export/seller/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"seller",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export All Sellers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/export/sellers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"sellers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"masha\",\n    \"password\": \"masha123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"if (jsonData) {",
+									"    pm.environment.set(\"BEARER_TOKEN\", pm.response.json().access_token) ;",
+									"}",
+									"",
+									"// pm - postman object"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{BEARER_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.sendRequest({",
+					"    url: pm.environment.get(\"url\")+\"/auth/login\",",
+					"    method: 'POST',",
+					"    header: {",
+					"        'Accept': 'application/json',",
+					"        'Content-Type': 'application/json'",
+					"    },",
+					"    body: {",
+					"        mode: 'raw',",
+					"        raw: JSON.stringify({\"username\": pm.environment.get(\"username\"), \"password\": pm.environment.get(\"password\")}),        ",
+					"    }",
+					"},",
+					"    (err, res) => {",
+					"        if (err) {",
+					"            console.log(err)",
+					"        } else {",
+					"            // Set BEARERTOKEN",
+					"            console.log(res)",
+					"            pm.environment.set(\"BEARER_TOKEN\", res.json().access_token)",
+					"        }",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
